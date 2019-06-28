@@ -3,7 +3,7 @@ jobs:
   build-and-test:
     macos:
       xcode: "10.2.0"
-    working_directory: /Users/distiller/project
+    working_directory: /Users/janlionly/MyHub
     environment:
       FL_OUTPUT_DIR: output
       FASTLANE_LANE: test
