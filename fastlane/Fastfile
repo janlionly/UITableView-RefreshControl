@@ -29,7 +29,7 @@ platform :ios do
   lane :adhoc do
     match(type: "adhoc")
     gym(export_method: "ad-hoc")
-    firim(firim_api_token:"5f6124c0e1b48f9517930abd9386e080", app_changelog: "#{changelog.to_s}")
+    firim(firim_api_token:"5f6124c0e1b48f9517930abd9386e080", app_changelog: "fixes bug")
   end
   # desc "Push a new release build to the App Store"
   # lane :release do
