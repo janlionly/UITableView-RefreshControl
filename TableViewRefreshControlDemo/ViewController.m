@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    // boot 
     [self.tableView setupRefreshControlWithTitle:@"刷新中..."
                                       titleColor:[UIColor darkTextColor]
                                   indicatorColor:[UIColor lightGrayColor]
