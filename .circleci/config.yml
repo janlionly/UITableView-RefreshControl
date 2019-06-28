@@ -3,9 +3,9 @@ jobs:
   build-and-test:
     macos:
       xcode: "10.2.0"
-    working_directory: /Users/janlionly/MyHub
+    # working_directory: /Users/janlionly/MyHub
     environment:
-      FL_OUTPUT_DIR: output
+      # FL_OUTPUT_DIR: output
       FASTLANE_LANE: test
     shell: /bin/bash --login -o pipefail
     steps:
@@ -14,17 +14,17 @@ jobs:
       - run:
           name: Fastlane
           command: bundle exec fastlane $FASTLANE_LANE
-      - store_artifacts:
-          path: output
-      - store_test_results:
-          path: output/scan
+      # - store_artifacts:
+      #     path: output
+      # - store_test_results:
+      #     path: output/scan
 
   adhoc:
     macos:
       xcode: "10.2.0"
-    working_directory: /Users/janlionly/MyHub
+    # working_directory: /Users/janlionly/MyHub
     environment:
-      FL_OUTPUT_DIR: output
+      # FL_OUTPUT_DIR: output
       FASTLANE_LANE: adhoc
     shell: /bin/bash --login -o pipefail
     steps:
@@ -33,8 +33,8 @@ jobs:
       - run:
           name: Fastlane
           command: bundle exec fastlane $FASTLANE_LANE
-      - store_artifacts:
-          path: output
+      # - store_artifacts:
+      #     path: output
 
   beta:
     macos:
