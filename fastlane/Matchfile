@@ -1,4 +1,4 @@
-git_url("git@github.com:janlionly/UrbaneScooterCersProfiles.git")
+git_url("git@github.com:janlionly/UECersProfiles.git")
 
 storage_mode("git")
 
